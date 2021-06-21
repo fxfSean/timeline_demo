@@ -10,32 +10,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Title Flutter",
       home: Scaffold(
-          appBar: AppBar(
-            title: Text('This is Title'),
-          ),
-          body: _HomeWidget()
+          body: PageViewHome()
       ),
     );
   }
 }
-
-class _HomeWidget extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          TextButton(
-              onPressed: () {
-                Navigator.of(context).push<void>(MaterialPageRoute(
-                    builder: (_) => PageViewHome()));
-              },
-              child: Text("pageView"))
-        ],
-      ),
-    );
-  }
-}
-

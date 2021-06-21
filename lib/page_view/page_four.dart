@@ -8,18 +8,23 @@ class PageFour extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.deepPurple,
+      color: Colors.tealAccent,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
             child: GestureDetector(
               onTap: () {
                 print("跳转第五页");
-                Navigator.of(context).push(MaterialPageRoute(builder: (_) => PageFive()));
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (_) => PageFive()));
               },
               child: Text(
                 '第4页',
-                style: TextStyle(color: Colors.black, fontSize: 20.0),
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20.0,
+                    decoration: TextDecoration.none),
               ),
             ),
           ),

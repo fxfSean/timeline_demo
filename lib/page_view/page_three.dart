@@ -12,7 +12,7 @@ class _PageThreeState extends State<PageThree> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.deepOrange,
+      color: Colors.lightBlue,
       child: Center(
         child: GestureDetector(
           onTap: (){
